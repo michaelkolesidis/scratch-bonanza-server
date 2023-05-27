@@ -1,0 +1,17 @@
+{
+  "ts-node": { "files": true },
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src"]
+}
