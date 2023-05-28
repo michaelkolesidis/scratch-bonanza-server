@@ -1,6 +1,6 @@
 {
   "name": "scratch-bonanza-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Michael Kolesidis",
   "description": "The server functionality of Scratch Bonanza",
   "license": "UNLICENSED",
