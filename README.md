@@ -18,7 +18,13 @@ yarn start
 
 ## Features
 
-Features a single API endpoint that returns an array of four values chosen randomly. The values and the probability of occurence are the following:
+The server offers a single API endpoint that returns an array of four values chosen randomly.
+
+Given the significance of security in the online gaming industry, where safeguarding fairness and integrity is paramount, to achieve secure random number generation, the server relies on the [Crypto](https://nodejs.org/api/crypto.html#crypto) module of Node.js. It is specifically designed to utilize cryptographic algorithms and system-level entropy sources, ensuring the production of random output that is suitable for cryptographic operations and resistant to various attacks.
+
+Since it is possible for Node.js to be built without including support for the `node:crypto` module, it is checked whether the module is available. If that is not the case, the service will fall back to using [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for generating random numbers.
+
+The values and the probability of occurrence are the following:
 
 | Value | Probability |
 | ----- | :---------: |
@@ -27,6 +33,17 @@ Features a single API endpoint that returns an array of four values chosen rando
 | 10    |     15%     |
 | 100   |     4%      |
 | 1000  |     1%      |
+
+These are the probabilities of some scenarios to occur:
+
+| Scenario            | Probability |
+| ------------------- | :---------: |
+| Get at least 1 coin |  39.8332%   |
+| Get four 0s         |    6.25%    |
+| Get four 1s         |    0.81%    |
+| Get four 10s        |    0.15%    |
+| Get four 100s       |  0.00256%   |
+| Get four 1000s      |  0.000001%  |
 
 ## Technologies
 
