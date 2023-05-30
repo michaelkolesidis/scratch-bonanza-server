@@ -1,6 +1,7 @@
-/**
- * API endpoint to fetch a scratchcard.
- */
+// Copyright (c) 2023 Michael Kolesidis (michael.kolesidis@gmail.com)
+// Licensed under the GNU Affero General Public License v3.0.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 let crypto: any;
 
 try {
@@ -11,6 +12,9 @@ try {
   );
 }
 
+/*
+ * API endpoint to fetch a scratchcard.
+ */
 export function getValues(): (0 | 1 | 10 | 100 | 1000)[] {
   const values: (0 | 1 | 10 | 100 | 1000)[] = [];
 
