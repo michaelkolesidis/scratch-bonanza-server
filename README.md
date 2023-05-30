@@ -4,17 +4,19 @@ The server of [Scratch Bonanza](https://github.com/michaelkolesidis/scratch-bona
 
 ## Instructions
 
-Install the project dependencies:
+**1.** Install the project dependencies:
 
 ```
 yarn
 ```
 
-Start the server:
+**2.** Start the server:
 
 ```
 yarn start
 ```
+
+**3.** Start the frontend, following the instructions in the [Scratch Bonanza](https://github.com/michaelkolesidis/scratch-bonanza) repository.
 
 ## Features
 
@@ -41,8 +43,8 @@ These are the probabilities of some scenarios to occur:
 | Get at least 1 coin |  39.8332%   |
 | Get four 0s         |    6.25%    |
 | Get four 1s         |    0.81%    |
-| Get four 10s        |    0.15%    |
-| Get four 100s       |  0.00256%   |
+| Get four 10s        |  0.050625%  |
+| Get four 100s       |  0.000256%  |
 | Get four 1000s      |  0.000001%  |
 
 ## Technologies
