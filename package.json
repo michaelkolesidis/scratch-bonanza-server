@@ -1,8 +1,9 @@
 {
   "name": "scratch-bonanza-server",
-  "version": "0.0.1",
-  "author": "Michael Kolesidis",
-  "description": "The server functionality of Scratch Bonanza",
+  "version": "1.0.0",
+  "author": "Michael Kolesidis <michael.kolesidis@gmail.com> (https://michaelkolesidis.com/)",
+  "license": "AGPL-3.0-or-later",
+  "description": "The server functionality of Scratch Bonanza, an online scratchcard game.",
   "keywords": [
     "nodejs",
     "api",
@@ -20,8 +21,8 @@
     "scratch-and-win",
     "scratchcard-game"
   ],
-  "license": "UNLICENSED",
-  "private": true,
+  "repository": "https://github.com/michaelkolesidis/scratch-bonanza-server.git",
+  "homepage": "https://github.com/michaelkolesidis/scratch-bonanza-server/",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only --exit-child --watch src src/index.ts"
   },
@@ -34,8 +35,8 @@
     "@types/express": "^4.17.14",
     "@types/node": "^20.2.5",
     "@types/supertest": "^2.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   }
